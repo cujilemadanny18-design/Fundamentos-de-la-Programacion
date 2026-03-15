@@ -1,0 +1,24 @@
+Proyecto académico desarrollado en Java para practicar el uso de métodos en programación. El programa resuelve un caso sencillo de la vida real: calcular el promedio de calificaciones a partir de datos de entrada, aplicando operaciones básicas, retorno de valores y ejecución desde el método principal. public class Promedionotas {
+
+// 1. Declaración del método
+// 2. Recibe dos parámetros (pueden ser más, pero el requisito mínimo es dos)
+// 3. Realiza un cálculo
+// 4. Retorna un resultado
+public static double calcularPromedio(double nota1, double nota2, double nota3) {
+    double promedio = (nota1 + nota2 + nota3) / 3;
+    return promedio;
+}
+
+public static void main(String[] args) {
+    // Datos de ejemplo
+    double n1 = 8.5;
+    double n2 = 9.0;
+    double n3 = 7.5;
+
+    // 5. Llamada al método desde main
+    double resultado = calcularPromedio(n1, n2, n3);
+
+    // Mostrar resultado en consola
+    System.out.println("El promedio es: " + resultado);
+}
+}
