@@ -1,0 +1,40 @@
+public static void main(String[] args) {
+
+        // Crear lista de tareas diarias
+        ArrayList<String> tareas = new ArrayList<>();
+
+        // Agregar tareas reales
+        tareas.add("Despertarse");
+        tareas.add("Bañarse");
+        tareas.add("Desayunar");
+        tareas.add("Ir a clases");
+        tareas.add("Hacer deberes");
+
+        // Mostrar lista inicial
+        System.out.println("Tareas diarias:");
+        System.out.println(tareas);
+
+        // Agregar una nueva tarea
+        tareas.add("Estudiar");
+        System.out.println("\nDespués de agregar una tarea:");
+        System.out.println(tareas);
+
+        // Eliminar una tarea
+        tareas.remove("Bañarse");
+        System.out.println("\nDespués de eliminar una tarea:");
+        System.out.println(tareas);
+
+        // Recorrer la lista
+        System.out.println("\nLista ordenada de tareas:");
+        for (String tarea : tareas) {
+            System.out.println("- " + tarea);
+        }
+
+        // Buscar una tarea
+        if (tareas.contains("Estudiar")) {
+            System.out.println("\nLa tarea 'Estudiar' está en la lista.");
+        } else {
+            System.out.println("\nLa tarea no está en la lista.");
+        }
+    }
+}
